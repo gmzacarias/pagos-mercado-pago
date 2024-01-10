@@ -9,6 +9,5 @@ const merchantOrder = new MerchantOrder(client)
 
 export async function getMerchantOrderId(orderData:MerchantOrderGetData) {
     const orderId = await merchantOrder.get(orderData)
-    
     return orderId
 }
